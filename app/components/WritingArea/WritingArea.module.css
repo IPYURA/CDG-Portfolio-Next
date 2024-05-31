@@ -1,0 +1,21 @@
+.container {
+  border: 1px solid blue;
+}
+.container > form > textarea {
+  resize: none;
+  width: 500px;
+  height: 300px;
+}
+.submitBtn {
+  all: unset;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  outline: none;
+  border:none;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  color:rgb(95, 212, 95)
+}
