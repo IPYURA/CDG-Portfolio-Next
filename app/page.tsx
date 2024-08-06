@@ -1,12 +1,15 @@
-import styles from "./page.module.css";
-// import { WritingArea } from './components/WritingArea/WritingArea';
-import Slider from "./components/Slider/Slider";
+import styles from "../styles/home.module.scss";
+import TestDartButton from "@/components/TestDarkButton";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <WritingArea/> */}
-      <Slider projectName="My Project"/>
+      <div>
+        <h3>테스트 텍스트입니다</h3>
+      </div>      
+      <Link href={'/testroute'}>테스트라우팅</Link>
+      <TestDartButton />
     </main>
   );
 }

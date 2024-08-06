@@ -1,130 +1,62 @@
-/*RESET CSS*/
-* {
-  box-sizing: border-box;
+$primary-color: #007aff;
+$lighten-color1: #bddeff;
+$lighten-color2: #d8ebfe;
+$bg-color: #ebf5ff;
+$secondary-color: #fed53a;
+$text-color: #161616;
+
+$primary-color-dark: #0b84ff;
+$lighten-color1-dark: #343434;
+$lighten-color2-dark: #545252;
+$bg-color-dark: #2b2b2b;
+$secondary-color-dark: #ffe454;
+$text-color-dark: #ffffff;
+
+:root {
+  --primary-color: #{$primary-color};
+  --lighten-color1: #{$lighten-color1};
+  --lighten-color2: #{$lighten-color2};
+  --bg-color: #{$bg-color};
+  --secondary-color: #{$secondary-color};
+  --text-color: #{$text-color};
 }
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+[data-theme="dark"] {
+  --primary-color: #{$primary-color-dark};
+  --lighten-color1: #{$lighten-color1-dark};
+  --lighten-color2: #{$lighten-color2-dark};
+  --bg-color: #{$bg-color-dark};
+  --secondary-color: #{$secondary-color-dark};
+  --text-color: #{$text-color-dark};
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --primary-color: #{$primary-color-dark};
+//     --lighten-color1: #{$lighten-color1-dark};
+//     --lighten-color2: #{$lighten-color2-dark};
+//     --bg-color: #{$bg-color-dark};
+//     --secondary-color: #{$secondary-color-dark};
+//     --text-color: #{$text-color-dark};
+//   }
+// }
+
 body {
-  line-height: 1;
+  background: #{var(--bg-color)};
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
+//기본 CSS------------
+// :root {
+//   background: $bg-color;
+//   color: $text-color;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     background: $bg-color-dark;
+//     color: $text-color-dark;
+//   }
+// }
 
 /* :root {
   --max-width: 1100px;
