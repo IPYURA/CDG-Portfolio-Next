@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  padding: 0 24px;
+  height: 80px;
+  background: #{var(--primary-color)};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 30px;
+    color: #fff;
+    &:hover {
+      color: #{var(--secondary-color)};
+    }
+  }
+  .utilWrap {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.gnb {
+  display: flex;
+  gap: 40px;
+  > a {
+    color: #fff;
+    font-size: 24px;
+    &:hover {
+      color: #{var(--secondary-color)};
+    }
+  }
+}
+
+.darkModeBtn {
+  width: 64px;
+  height: 36px;
+  border-radius: 18px;
+  background: #{var(--lighten-color1)};
+  padding: 4px 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+//   position: relative;
+//   #icon_sun {
+//     position: absolute;
+//     top: 7px;
+//     left: 6px;
+//   }
+}

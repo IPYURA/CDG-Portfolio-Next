@@ -8,7 +8,6 @@ export default function Home() {
       <div>
         <h3>테스트 텍스트입니다</h3>
       </div>      
-      <Link href={'/testroute'}>테스트라우팅</Link>
       <TestDartButton />
     </main>
   );
