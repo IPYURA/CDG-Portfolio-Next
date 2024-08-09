@@ -1,10 +1,14 @@
 import styles from "@/styles/projects.module.scss";
+import Slider from "@/components/Projects/Slider";
+import Description from "@/components/Projects/Description";
+import UsedStack from "@/components/Projects/UsedStack";
 
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <h1>Projects 페이지입니다.</h1>
-
+      <Slider/>
+      <UsedStack/>
+      <Description/>
     </div>
   )
   

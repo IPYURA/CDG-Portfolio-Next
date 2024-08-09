@@ -1,6 +1,62 @@
+//Project Page
 .container {
-    border:1px solid red;
-    max-width:1400px;
-    min-width: 320px;
-    padding:0 24px;
+  margin: 0 auto;
+  // padding:0 24px;
+  border: 1px solid red;
+  max-width: 1400px;
+  min-width: 320px;
+}
+
+//Slider
+.slider {
+  background: cadetblue;
+  aspect-ratio: 2;
+  width: 100%;
+  position: relative;
+  .prev,
+  .next {
+    border: none;
+    aspect-ratio: 0.33;
+    width: clamp(24px, 4%, 40px);
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(calc(-50% - 2px));
+    }
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+//UsedStack
+.usedStack {
+  width: 100%;
+  height: auto;
+  padding: 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  //색상 정한 색으로 바꾸기
+  .stackBadge {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 16px;
+    background: #ddd;
+    border-radius: 4px;
+  }
+}
+
+//Description
+.description {
+  width: 100%;
+  padding: 0 24px;
+  background: teal;
 }
