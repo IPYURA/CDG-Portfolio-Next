@@ -9,11 +9,14 @@
   a {
     font-size: 30px;
     color: #fff;
+    transition: 0.4s;
     &:hover {
       color: #{var(--secondary-color)};
+      // transform: translateY(-1px);
     }
   }
   .utilWrap {
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -21,13 +24,32 @@
 }
 
 .gnb {
+  height: 100%;
   display: flex;
   gap: 40px;
+  position: relative;
   > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     color: #fff;
     font-size: 24px;
     &:hover {
       color: #{var(--secondary-color)};
+    }
+    &.on {
+      color: #{var(--secondary-color)};
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: inline-block;
+        width: 100%;
+        height: 3px;
+        background: #{var(--secondary-color)};
+      }
     }
   }
 }
@@ -42,11 +64,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-//   position: relative;
-//   #icon_sun {
-//     position: absolute;
-//     top: 7px;
-//     left: 6px;
-//   }
+  position: relative;
+  .circle {
+    position: absolute;
+    --circleSize: 28px;
+    width: var(--circleSize);
+    height: var(--circleSize);
+    border-radius: 50%;
+    background: #{var(--secondary-color)};
+    transition: 0.4s;
+    &.light {
+      right: 4px;
+    }
+    &.dark {
+      // left: 4px;
+      right: calc(100% - var(--circleSize) - 4px);
+    }
+  }
+  //   #icon_sun {
+  //     position: absolute;
+  //     top: 7px;
+  //     left: 6px;
+  //   }
 }

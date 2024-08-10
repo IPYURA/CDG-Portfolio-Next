@@ -1,17 +1,36 @@
 import styles from "@/styles/projects.module.scss";
-import Slider from "@/components/Projects/Slider";
-import Description from "@/components/Projects/Description";
-import UsedStack from "@/components/Projects/UsedStack";
+import ProjectCard from "@/components/Projects/\bProjectCard";
+import Link from "next/link";
 
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <Slider/>
-      <UsedStack/>
-      <Description/>
+      <h3 className={styles.pageTitle}>Projects</h3>
+      <div className={styles.gridBox}>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+        <Link href={"/projects/example"}>
+          <ProjectCard />
+        </Link>
+      </div>
     </div>
-  )
-  
+  );
 };
 
 export default Projects;
