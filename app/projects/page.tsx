@@ -1,5 +1,5 @@
 import styles from "@/styles/projects.module.scss";
-import ProjectCard from "@/components/Projects/\bProjectCard";
+import ProjectCard from "@/components/Projects/ProjectCard";
 import Link from "next/link";
 
 const Projects = () => {

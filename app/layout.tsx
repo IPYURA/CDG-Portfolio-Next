@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_KR, Roboto } from "next/font/google";
 import "../styles/globals.scss";
+import "../styles/zIndex.scss";
 import "../styles/reset.scss";
 import Header from "@/components/Header";
 
