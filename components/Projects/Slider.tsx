@@ -7,14 +7,14 @@ import Slide from "./Slide";
 
 const Slider = ({ images }: { images: StaticImageData[] }) => {
   const [nowIndex, setNowIndex] = useState(0);
-  const [slideArr, setSlideArr] = useState<StaticImageData[]>();
+  const [slideArr, setSlideArr] = useState<StaticImageData[]>(images);
 
   const initArray = () => {
     const lastSlide = images[images.length - 1];
     const firstSlide = images[0];
     // images.unshift(lastSlide);
     // images.push(firstSlide);
-    
+    // setSlideArr((arr) => arr.push(lastSlide));
   };
 
   const moveNext = () => {
@@ -27,8 +27,8 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
   useEffect(() => {
     setSlideArr(images);
     initArray();
-    console.log("images의 정체: ", images);
-  },[]);
+    // console.log("slideArr의 정체: ", slideArr);
+  }, []);
 
   return (
     <div className={styles.slider}>
