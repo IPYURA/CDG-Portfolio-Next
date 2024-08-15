@@ -2,13 +2,16 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import styles from "@/styles/projects.module.scss";
 
-const Slide = ({ image }: { image: StaticImageData }) => {
-  return (
-    <Image className={styles.slide} src={image} alt="img" />
+interface ISlideProps {
+  image: StaticImageData;
+  priority: boolean;
+}
 
-    // <div className={styles.slide}>
-    //   <Image src={image} alt="img" />
-    // </div>
+const Slide = ({ image, priority }: ISlideProps) => {
+  return (
+    <div className={styles.slide}>
+      <Image src={image} alt="img" priority={priority} />
+    </div>
   );
 };
 

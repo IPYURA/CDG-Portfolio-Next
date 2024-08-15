@@ -1,14 +1,8 @@
 import styles from "@/styles/projects.module.scss";
-import StackBadge from "./StackBadge";
+import { ReactNode } from "react";
 
-const UsedStack =() => {
-    return (
-        <div className={styles.usedStack}>
-           <StackBadge name="React"/> 
-           <StackBadge name="Styled-Components"/>
-           <StackBadge name="React"/> 
-        </div>
-    )
-}
+const UsedStack = ({ children }: { children: ReactNode }) => {
+  return <div className={styles.usedStack}>{children}</div>;
+};
 
 export default UsedStack;

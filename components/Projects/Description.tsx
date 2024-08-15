@@ -1,9 +1,7 @@
 import styles from "@/styles/projects.module.scss";
 
-const Description = () => {
-  return <div className={styles.description}>
-description
-  </div>;
+const Description = ({ children }: any) => {
+  return <div className={styles.description}>{children}</div>;
 };
 
 export default Description;

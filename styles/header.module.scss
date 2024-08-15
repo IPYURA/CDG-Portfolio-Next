@@ -1,32 +1,38 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--header);
   width: 100%;
   padding: 0 24px;
-  height: 80px;
-  background: #{var(--primary-color)};
+  height: 64px;
+  background: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  a {
-    font-size: 30px;
-    color: #fff;
-    transition: 0.4s;
-    &:hover {
-      color: #{var(--secondary-color)};
-      // transform: translateY(-1px);
+  .logo {
+    a {
+      font-size: 24px;
+      color: #fff;
+      transition: 0.4s;
+      &:hover {
+        color: var(--secondary-color);
+        // transform: translateY(-1px);
+      }
     }
   }
   .utilWrap {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
   }
 }
 
 .gnb {
   height: 100%;
   display: flex;
-  gap: 40px;
+  gap: 32px;
   position: relative;
   > a {
     display: flex;
@@ -34,12 +40,12 @@
     justify-content: center;
     height: 100%;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     &:hover {
-      color: #{var(--secondary-color)};
+      color: var(--secondary-color);
     }
     &.on {
-      color: #{var(--secondary-color)};
+      color: var(--secondary-color);
       position: relative;
       &::after {
         content: "";
@@ -48,30 +54,30 @@
         display: inline-block;
         width: 100%;
         height: 3px;
-        background: #{var(--secondary-color)};
+        background: var(--secondary-color);
       }
     }
   }
 }
 
 .darkModeBtn {
+  position: relative;
   width: 64px;
   height: 36px;
   border-radius: 18px;
-  background: #{var(--lighten-color1)};
+  background: var(--lighten-color1);
   padding: 4px 7px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   .circle {
     position: absolute;
     --circleSize: 28px;
     width: var(--circleSize);
     height: var(--circleSize);
     border-radius: 50%;
-    background: #{var(--secondary-color)};
+    background: var(--secondary-color);
     transition: 0.4s;
     &.light {
       right: 4px;
@@ -81,9 +87,23 @@
       right: calc(100% - var(--circleSize) - 4px);
     }
   }
-  //   #icon_sun {
-  //     position: absolute;
-  //     top: 7px;
-  //     left: 6px;
-  //   }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    height: 56px;
+    padding: 0 16px;
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      > a {
+        font-size: 22px;
+      }
+    }
+  }
+  .utilWrap {
+    justify-content: space-between;
+    width: 100%;
+  }
 }

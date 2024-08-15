@@ -1,4 +1,4 @@
-//Project Page, Detail Page
+//-------------Project Page, Detail Page
 .container,
 .detailWrap {
   margin: 0 auto;
@@ -20,7 +20,16 @@
   }
 }
 
-//ProjectCard
+.detailWrap {
+  .title {
+    padding: 12px 24px;
+    font-size: 20px;
+    // border-bottom: 1px solid var(--text-color);
+    background: var(--lighten-color2);
+  }
+}
+
+//-------------ProjectCard
 .projectCard {
   width: 100%;
   height: 230px;
@@ -29,34 +38,59 @@
   cursor: pointer;
 }
 
-//Slider
+//-------------Slider
 .slider {
   background: cadetblue;
   aspect-ratio: 2;
   width: 100%;
   position: relative;
-  //   overflow: hidden;
+  overflow: hidden;
   .prev,
   .next {
+    position: absolute;
     border: none;
     aspect-ratio: 0.33;
     width: clamp(24px, 4%, 40px);
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     transition: 0.3s;
     z-index: var(--interaction-button);
-    &:hover {
-      transform: translateY(calc(-50% - 2px));
-    }
   }
   .prev {
     left: 0;
+    &:hover {
+      transform: translate(2px, -50%);
+    }
   }
   .next {
     right: 0;
+    &:hover {
+      transform: translate(-2px, -50%);
+    }
+  }
+  .pager {
+    position: absolute;
+    z-index: var(--interaction-button);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+    gap: 6px;
+    .circle {
+      all: unset;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      opacity: 0.8;
+      box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+      &.active {
+        background: var(--secondary-color);
+      }
+    }
   }
   .slideFrame {
     position: absolute;
@@ -67,12 +101,20 @@
     .slide {
       width: 100%;
       height: 100%;
-      border:2px solid red;
+      background: var(--lighten-color1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        width: auto;
+        object-fit: contain;
+        height: 100%;
+      }
     }
   }
 }
 
-//UsedStack
+//-------------UsedStack
 .usedStack {
   width: 100%;
   height: auto;
@@ -81,18 +123,33 @@
   flex-wrap: wrap;
   gap: 8px;
   //색상 정한 색으로 바꾸기
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
   .stackBadge {
     width: auto;
     padding: 6px 12px;
     font-size: 16px;
-    background: #ddd;
+    // background: #ddd;
+    background: var(--primary-color);
     border-radius: 4px;
+    color: #ffffff;
   }
 }
 
-//Description
+//-------------Description
 .description {
   width: 100%;
-  padding: 0 24px;
-  background: teal;
+  padding: 12px 24px;
+  //   background: teal;
+  color: var(--text-color);
+  .sectionTit {
+    font-size: 20px;
+    padding: 8px 0;
+    font-weight: 600;
+  }
+  .desc {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-bottom: 12px;
+  }
 }
