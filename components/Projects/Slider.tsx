@@ -16,7 +16,7 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
     setIsDisabled(true);
     setTimeout(() => {
       setIsDisabled(false);
-    }, 400);
+    }, 450);
   };
 
   const moveNext = () => {
@@ -34,14 +34,14 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
       setTimeout(() => {
         setIsTransition(false);
         setNowIndex(1);
-      }, 400);
+      }, 300);
     }
 
     if (nowIndex === 0) {
       setTimeout(() => {
         setIsTransition(false);
         setNowIndex(maxIndex - 1);
-      }, 400);
+      }, 300);
     }
 
     setTimeout(() => {
@@ -54,7 +54,6 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
   };
 
   useEffect(() => {
-    console.log("NOW: ", nowIndex);
     checkLimit();
   }, [nowIndex]);
 

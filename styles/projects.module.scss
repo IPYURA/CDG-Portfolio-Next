@@ -20,15 +20,6 @@
   }
 }
 
-.detailWrap {
-  .title {
-    padding: 12px 24px;
-    font-size: 20px;
-    // border-bottom: 1px solid var(--text-color);
-    background: var(--lighten-color2);
-  }
-}
-
 //-------------ProjectCard
 .projectCard {
   width: 100%;
@@ -72,10 +63,10 @@
   }
   .pager {
     position: absolute;
-    z-index: var(--interaction-button);
     left: 50%;
-    transform: translateX(-50%);
     bottom: 10px;
+    z-index: var(--interaction-button);
+    transform: translateX(-50%);
     display: flex;
     gap: 6px;
     .circle {
@@ -97,11 +88,12 @@
     top: 0;
     height: 100%;
     display: flex;
-    transition: 0.4s;
+    transition: 0.3s;
     .slide {
       width: 100%;
       height: 100%;
-      background: var(--lighten-color1);
+      //   background: var(--lighten-color2);
+      background: var(--achromatic1);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -123,8 +115,10 @@
   flex-wrap: wrap;
   gap: 8px;
   //색상 정한 색으로 바꾸기
-  border-top: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
+  border-top: 1px solid var(--achromatic3);
+  border-bottom: 1px solid var(--achromatic3);
+  //   border-top: 1px solid var(--text-color);
+  //   border-bottom: 1px solid var(--text-color);
   .stackBadge {
     width: auto;
     padding: 6px 12px;
@@ -139,12 +133,20 @@
 //-------------Description
 .description {
   width: 100%;
+  margin-bottom: 60px;
   padding: 12px 24px;
-  //   background: teal;
   color: var(--text-color);
+  border-bottom: 1px solid var(--achromatic3);
+  .title {
+    font-size: 24px;
+    padding:12px 0;
+    font-weight: 600;
+    // background: var(--bg-color);
+    // background: var(--achromatic3);
+  }
   .sectionTit {
     font-size: 20px;
-    padding: 8px 0;
+    padding: 12px 0;
     font-weight: 600;
   }
   .desc {

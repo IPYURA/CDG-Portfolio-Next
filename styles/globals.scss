@@ -1,18 +1,36 @@
-$primary-color: #007aff;
-$lighten-color1: #bddeff;
-$lighten-color2: #d8ebfe;
-// $bg-color: #ebf5ff;
+// $primary-color: #007aff;
+// $lighten-color1: #bddeff;
+// $lighten-color2: #d8ebfe;
+// $bg-color: #ffffff;
+// $secondary-color: #fed53a;
+// $text-color: #161616;
+$primary-color: #0174ff;
+$lighten-color1: #0097ff;
+$lighten-color2: #50b8ff;
 $bg-color: #ffffff;
-$secondary-color: #fed53a;
+$secondary-color: #eeb921;
 $text-color: #161616;
 
-$primary-color-dark: #0b84ff;
-$lighten-color1-dark: #343434;
-$lighten-color2-dark: #545252;
+$achromatic1:#c2c2c2;
+$achromatic2:#dedede;
+$achromatic3:#f0f0f0;
+
+// $primary-color-dark: #0b84ff;
+// $lighten-color1-dark: #343434;
+// $lighten-color2-dark: #545252;
+// $bg-color-dark: #2b2b2b;
+// $secondary-color-dark: #ffe454;
+// $text-color-dark: #ffffff;
+$primary-color-dark: #0088ff;
+$lighten-color1-dark: #0ba7ff;
+$lighten-color2-dark: #8accff;
 $bg-color-dark: #2b2b2b;
-$secondary-color-dark: #ffe454;
+$secondary-color-dark: #efd12a;
 $text-color-dark: #ffffff;
 
+$achromatic1-dark:#3c3c3c;
+$achromatic2-dark:#606060;
+$achromatic3-dark:#818181;
 
 :root {
   --primary-color: #{$primary-color};
@@ -21,6 +39,9 @@ $text-color-dark: #ffffff;
   --bg-color: #{$bg-color};
   --secondary-color: #{$secondary-color};
   --text-color: #{$text-color};
+  --achromatic1:#{$achromatic1};
+  --achromatic2:#{$achromatic2};
+  --achromatic3:#{$achromatic3};
 }
 
 [data-theme="dark"] {
@@ -30,6 +51,9 @@ $text-color-dark: #ffffff;
   --bg-color: #{$bg-color-dark};
   --secondary-color: #{$secondary-color-dark};
   --text-color: #{$text-color-dark};
+  --achromatic1:#{$achromatic1-dark};
+  --achromatic2:#{$achromatic2-dark};
+  --achromatic3:#{$achromatic3-dark};
 }
 
 // @media (prefers-color-scheme: dark) {

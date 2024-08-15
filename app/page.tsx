@@ -1,5 +1,4 @@
 import styles from "../styles/home.module.scss";
-import TestDartButton from "@/components/TestDarkButton";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
       <div>
         <h3>테스트 텍스트입니다</h3>
       </div>      
-      <TestDartButton />
     </main>
   );
 }
