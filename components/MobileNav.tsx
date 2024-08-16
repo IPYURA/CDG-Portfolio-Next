@@ -6,7 +6,7 @@ import styles from "@/styles/header.module.scss";
 
 interface IProps {
   isOpen: boolean;
-  onClickNav(): () => void;
+  onClickNav: () => void;
 }
 
 const MobileNav = ({ isOpen, onClickNav }: IProps) => {
