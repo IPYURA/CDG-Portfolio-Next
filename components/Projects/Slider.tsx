@@ -5,6 +5,9 @@ import styles from "@/styles/projects.module.scss";
 import { StaticImageData } from "next/image";
 import Slide from "./Slide";
 import Pager from "./Pager";
+import Svg from "../Svg";
+import IconLeft from "@/public/icons/icon-left.svg";
+import IconRight from "@/public/icons/icon-right.svg";
 
 const Slider = ({ images }: { images: StaticImageData[] }) => {
   const [nowIndex, setNowIndex] = useState(1);
@@ -66,14 +69,18 @@ const Slider = ({ images }: { images: StaticImageData[] }) => {
             disabled={isDisabled}
             className={styles.prev}
           >
-            이전
+            <Svg width={18} height={27} color="#3e3e3e">
+              <IconLeft />
+            </Svg>
           </button>
           <button
             onClick={moveNext}
             disabled={isDisabled}
             className={styles.next}
           >
-            다음
+            <Svg width={18} height={27} color="#3e3e3e">
+              <IconRight />
+            </Svg>
           </button>
           <Pager
             images={images}
