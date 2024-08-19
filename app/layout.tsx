@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_KR, Roboto } from "next/font/google";
+import { notoSansKR, roboto } from "./font";
 import "../styles/globals.scss";
 import "../styles/zIndex.scss";
 import "../styles/reset.scss";
 import Header from "@/components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
-// const notoSansKR = Noto_Sans_KR({ subsets: ["latin"] });
-// const roboto = Noto_Sans_KR({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CDG Portfolio",
@@ -21,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={notoSansKR.className}>
         <Header />
         {children}
       </body>

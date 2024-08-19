@@ -1,24 +1,46 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/header.module.scss";
-import Image from "next/image";
 import Icon_moon from "../public/images/icon-moon.svg";
 import Icon_sun from "../public/images/icon-sun.svg";
-
 import Svg from "./Svg";
 
 const DarkModeButton = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const darkModeHandler = () => {
-    setIsDarkMode(!isDarkMode);
 
+  const makeDarkMode = () => {
+    document.body.setAttribute("data-theme", "dark");
+    localStorage.setItem("Dark/Light", "Dark");
+    setIsDarkMode(true);
+  };
+
+  const makeLightMode = () => {
+    document.body.setAttribute("data-theme", "light");
+    localStorage.setItem("Dark/Light", "Light");
+    setIsDarkMode(false);
+  };
+
+  const darkModeHandler = () => {
     if (isDarkMode) {
-      document.body.setAttribute("data-theme", "light");
+      makeLightMode();
     } else {
-      document.body.setAttribute("data-theme", "dark");
+      makeDarkMode();
     }
   };
+
+  useEffect(() => {
+    const nowLocalStorage = localStorage.getItem("Dark/Light");
+    if (nowLocalStorage === undefined || nowLocalStorage === null) {
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? makeDarkMode()
+        : makeLightMode();
+    } else {
+      nowLocalStorage === "Dark" ? makeDarkMode() : makeLightMode();
+    }
+  }, []);
+
   return (
     <div className={styles.darkModeBtn} onClick={darkModeHandler}>
       <Svg width={22} height={22} color={"orange"}>

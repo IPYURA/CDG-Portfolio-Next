@@ -1,5 +1,6 @@
 import styles from "../styles/home.module.scss";
 import Link from "next/link";
+import { roboto } from "./font";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <div className={styles.picture}>이미지</div>
         <section className={styles.desc}>
           <h1 className={styles.title}>
-            <em>Front-End</em> 개발자를 꿈꾸는
+            <em className={roboto.className}>Front-End</em> 개발자를 꿈꾸는
             <br /> 조동건입니다.
           </h1>
           <h4 className={styles.introText}>

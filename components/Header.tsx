@@ -3,14 +3,14 @@ import Gnb from "./Gnb";
 import DarkModeButton from "./DarkModeButton";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
-
 import MobileNav from "./MobileNav";
 import Svg from "./Svg";
 import IconMenu from "@/public/icons/icon-menu.svg";
+import { roboto } from "@/app/font";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${roboto.className}`}>
       <h1 className={styles.logo}>
         <Link href={"/"}>CDG Portfolio</Link>
       </h1>

@@ -3,6 +3,8 @@ import Slider from "@/components/Projects/Slider";
 import Description from "@/components/Projects/Description";
 import UsedStack from "@/components/Projects/UsedStack";
 import StackBadge from "@/components/Projects/StackBadge";
+import LinkGithub from "@/components/Projects/LinkGithub";
+import LinkWeb from "@/components/Projects/LinkWeb";
 
 import mockData from "@/projectData";
 
@@ -16,6 +18,11 @@ const Example = () => {
         <StackBadge name="Next.js" />
         <StackBadge name="Next.js" />
       </UsedStack>
+      <div className={styles.linkBox}>
+        <span>방문하기: &nbsp;</span>
+        <LinkGithub address="address" />
+        <LinkWeb address="address" />
+      </div>
       <Description>
         <h2 className={styles.title}>[프로젝트의 제목]</h2>
         <h3 className={styles.sectionTit}>작은 제목이들어갑니다.</h3>
