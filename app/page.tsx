@@ -1,12 +1,17 @@
 import styles from "../styles/home.module.scss";
 import Link from "next/link";
 import { roboto } from "./font";
+import Image from "next/image";
+import MainImg from "@/public/images/img_2068.jpg";
+import StackList from "@/components/Home/StackList";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.flexBox}>
-        <div className={styles.picture}>이미지</div>
+        <div className={styles.picture}>
+          <Image src={MainImg} alt="mainImg" priority />
+        </div>
         <section className={styles.desc}>
           <h1 className={styles.title}>
             <em className={roboto.className}>Front-End</em> 개발자를 꿈꾸는
@@ -17,7 +22,7 @@ export default function Home() {
             앞에 놓인 기계를 움직이는 것을 넘어, 프로그래밍을 통해 웹이라는 더
             넓은 세상에 영향을 끼치고 싶습니다.
           </h4>
-          <div className={styles.stackBox}></div>
+          <StackList/>
         </section>
       </div>
     </main>

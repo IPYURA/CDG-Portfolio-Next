@@ -7,10 +7,15 @@
   display: flex;
   align-items: center;
   .picture {
-    border: 1px solid green;
     width: 300px;
     height: 400px;
     flex-shrink: 0;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      height: 100%;
+      transform: translateY(-60px) scale(1.8);
+    }
   }
   .flexBox {
     width: 100%;
@@ -37,9 +42,68 @@
         font-weight: 300;
         margin-bottom: 24px;
       }
-      .stackBox {
+      .stackList {
         width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .classification {
+          > h3 {
+            font-size: 18px;
+            padding-bottom: 12px;
+            color:var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap:4px;
+            &::before {
+              content: "";
+              display: block;
+              width: 10px;
+              height: 10px;
+              background: var(--primary-color);
+              transform: translateY(2px);
+            }
+            // > mark {
+            //   background: var(--secondary-color);
+            //   padding:0 8px;
+            // }
+          }
+          .items {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px;
+          }
+        }
+        .stack {
+          position: relative;
+          margin-bottom: 4px;
+          padding: 6px;
+          width: fit-content;
+          border-radius: 4px;
+          background: var(--lighten-color4);
+          color: var(--text-color);
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          > span {
+            display: inline-block;
+            padding-right: 1px;
+          }
+          .star {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: -8px;
+            right: -4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            height: auto;
+          }
+        }
       }
     }
   }

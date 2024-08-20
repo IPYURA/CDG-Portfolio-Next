@@ -5,11 +5,13 @@
   max-width: 1200px;
   min-width: 320px;
   .pageTitle {
-    text-align: center;
     font-size: 24px;
     padding: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
   }
   .gridBox {
+    margin-bottom: 60px;
     padding: 0 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
