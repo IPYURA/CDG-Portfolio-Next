@@ -14,6 +14,7 @@ import bootstrap from "@/public/icons/icon-bootstrap.png";
 import tailwind from "@/public/icons/icon-tailwind.png";
 import github from "@/public/icons/icon-github.png";
 import figma from "@/public/icons/icon-figma.png";
+import sql from "@/public/icons/icon-mysql.png";
 
 interface IStacks {
   [key: string]: StaticImageData;
@@ -35,4 +36,5 @@ export const stacks: IStacks = {
   tailwind: tailwind,
   github: github,
   figma: figma,
+  sql: sql,
 };

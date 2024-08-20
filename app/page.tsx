@@ -9,8 +9,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.flexBox}>
-        <div className={styles.picture}>
-          <Image src={MainImg} alt="mainImg" priority />
+        <div className={styles.pictureWrap}>
+          <div className={styles.picture}>
+            <Image src={MainImg} alt="mainImg" />
+          </div>
+          <div className={styles.contact}>
+            <div className={styles.phone}>Phone: 010-8434-8174</div>
+            <div className={styles.mail}>Mail: 0207ehdrjs@naver.com</div>
+          </div>
         </div>
         <section className={styles.desc}>
           <h1 className={styles.title}>
@@ -24,6 +30,7 @@ export default function Home() {
           </h4>
           <StackList />
         </section>
+        <Link href="/projects">프로젝트 보기</Link>
       </div>
     </main>
   );

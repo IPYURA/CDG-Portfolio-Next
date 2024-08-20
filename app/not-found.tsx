@@ -8,7 +8,7 @@ const Custom404 = () => {
     <>
       <div className={styles.notFoundBG}>
         <div className={styles.contentBox}>
-          <Image src={NotFoundImg} alt="" />
+          <Image src={NotFoundImg} alt="not-found" priority />
           <h3 className={roboto.className}>Page Not Found.</h3>
           <h5>존재하지 않는 페이지입니다.</h5>
         </div>

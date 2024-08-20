@@ -31,10 +31,18 @@ const StackList = () => {
         </div>
       </div>
       <div className={styles.classification}>
+        <h3>State Management Library</h3>
+        <div className={styles.items}>
+          <Stack name="Redux" image={stacks.redux} star={true} />
+          <Stack name="Recoil" image={stacks.recoil} star={true} />
+        </div>
+      </div>
+      <div className={styles.classification}>
         <h3>Tools</h3>
         <div className={styles.items}>
           <Stack name="Github" image={stacks.github} star={true} />
           <Stack name="Figma" image={stacks.figma} />
+          <Stack name="Workbench(MySQL)" image={stacks.sql} />
         </div>
       </div>
     </div>
