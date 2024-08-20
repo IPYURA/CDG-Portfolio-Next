@@ -2,7 +2,7 @@ import styles from "../styles/home.module.scss";
 import Link from "next/link";
 import { roboto } from "./font";
 import Image from "next/image";
-import MainImg from "@/public/images/img_2068.jpg";
+import MainImg from "../public/images/img-me.jpg";
 import StackList from "@/components/Home/StackList";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
             앞에 놓인 기계를 움직이는 것을 넘어, 프로그래밍을 통해 웹이라는 더
             넓은 세상에 영향을 끼치고 싶습니다.
           </h4>
-          <StackList/>
+          <StackList />
         </section>
       </div>
     </main>
