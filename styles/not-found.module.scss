@@ -1,0 +1,49 @@
+.notFoundBG {
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .contentBox {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > img {
+      max-width: 400px;
+      height: auto;
+      object-fit: contain;
+    }
+    > h3 {
+      font-size: 48px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+    > h5 {
+      font-size: 32px;
+      color: var(--text-color);
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .notFoundBG {
+    height: calc(100vh - 56px);
+    .contentBox {
+      > img {
+        max-width: 260px;
+      }
+      > h3 {
+        font-size: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      > h5 {
+        font-size: 18px;
+      }
+    }
+  }
+}
