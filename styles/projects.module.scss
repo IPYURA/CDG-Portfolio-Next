@@ -33,7 +33,6 @@
   background: var(--lighten-color4);
   border: 2px solid transparent;
   &:hover {
-    // transform: scale(1.01);
     border: 2px solid var(--achromatic3);
   }
   > img {
@@ -61,7 +60,6 @@
 
 //-------------Slider
 .slider {
-  background: cadetblue;
   aspect-ratio: 2;
   width: 100%;
   position: relative;

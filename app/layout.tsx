@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notoSansKR, roboto } from "./font";
+import { notoSansKR } from "./font";
 import "../styles/globals.scss";
 import "../styles/zIndex.scss";
 import "../styles/reset.scss";
