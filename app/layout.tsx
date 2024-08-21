@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import "../styles/zIndex.scss";
 import "../styles/reset.scss";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "CDG Portfolio",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={notoSansKR.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -97,6 +97,16 @@
   }
 }
 
+.footer {
+  width: 100%;
+  height: 64px;
+  background: var(--achromatic1);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 769px) {
   .header {
     height: 56px;
