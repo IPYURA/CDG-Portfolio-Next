@@ -17,7 +17,6 @@
       transition: 0.4s;
       &:hover {
         color: var(--secondary-color);
-        // transform: translateY(-1px);
       }
     }
   }
@@ -91,7 +90,6 @@
       right: 4px;
     }
     &.dark {
-      // left: 4px;
       right: calc(100% - var(--circleSize) - 4px);
     }
   }
@@ -137,8 +135,6 @@
     top: 0;
     left: -360px;
     background: var(--achromatic1);
-    // min-width: 200px;
-    // max-width: 360px;
     width: clamp(180px, 40%, 360px);
     height: calc(100vh - 56px);
     transition: all 0.4s ease-out;
