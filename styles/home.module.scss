@@ -68,7 +68,6 @@
     .desc {
       flex-grow: 1;
       height: auto;
-      // border: 1px solid green;
       .title {
         font-size: 38px;
         color: var(--text-color);
@@ -86,7 +85,6 @@
       }
       .stackList {
         width: 100%;
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -144,6 +142,102 @@
             justify-content: center;
             width: fit-content;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    padding-bottom: 60px;
+    .flexBox {
+      gap: 32px;
+      flex-direction: column;
+      align-items: start;
+      .pictureWrap {
+        flex-direction: row;
+        align-items: end;
+        justify-content: start;
+        .picture {
+          width: 200px;
+          height: 266px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .flexBox {
+      align-items: center;
+      padding: 16px;
+      padding-bottom: 80px;
+      > a {
+        right: 50%;
+        transform: translateX(50%);
+      }
+      .pictureWrap {
+        align-items: center;
+        .picture {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          > img {
+            object-fit: cover;
+          }
+        }
+      }
+      .desc {
+        .title {
+          font-size: 24px;
+        }
+        .introText {
+          font-size: 12px;
+          line-height: 1.2;
+        }
+        .stackList {
+          .classification {
+            > h3 {
+              position: relative;
+              font-size: 16px;
+              padding-left: 12px;
+              &::before {
+                position: absolute;
+                left: 0;
+                top: 3px;
+                width: 8px;
+                height: 8px;
+              }
+            }
+          }
+          .stack {
+            padding: 5px;
+            > span {
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main {
+    .flexBox {
+      .pictureWrap {
+        flex-direction: column;
+        .contact {
+          .phone, .mail {
+            font-size: 16px;
+            &::before {
+              width: 2px;
+              height: 16px;
+            }
           }
         }
       }

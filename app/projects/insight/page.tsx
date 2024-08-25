@@ -6,24 +6,23 @@ import StackBadge from "@/components/Projects/StackBadge";
 import LinkGithub from "@/components/Projects/LinkGithub";
 import LinkWeb from "@/components/Projects/LinkWeb";
 
-import { mockData } from "@/projectData";
+import { insightData } from "@/projectData";
 
-const Example = () => {
+const Insight = () => {
   return (
     <div className={styles.detailWrap}>
-      <Slider images={mockData.sliderImg} />
+      <Slider images={insightData.sliderImg} />
       <UsedStack>
         <StackBadge name="Next.js" />
-        <StackBadge name="Next.js" />
-        <StackBadge name="Next.js" />
+        <StackBadge name="Typescript" />
       </UsedStack>
       <div className={styles.linkBox}>
         <span>방문하기: &nbsp;</span>
-        <LinkGithub address="address" />
-        <LinkWeb address="address" />
+        <LinkGithub address="https://github.com/IPYURA/nextjs-project" />
+        <LinkWeb address="https://www.eopinsight.com/" />
       </div>
       <Description>
-        <h2 className={styles.title}>[프로젝트의 제목]</h2>
+        <h2 className={styles.title}>[{insightData.title}]</h2>
         <h3 className={styles.sectionTit}>작은 제목이들어갑니다.</h3>
         <div className={styles.desc}>
           이곳에는 내용이 들어갑니다 Lorem, ipsum dolor sit amet consectetur
@@ -71,4 +70,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default Insight;

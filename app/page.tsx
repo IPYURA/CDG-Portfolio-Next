@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.flexBox}>
         <div className={styles.pictureWrap}>
           <div className={styles.picture}>
-            <Image src={MainImg} alt="mainImg" priority />
+            <Image src={MainImg} alt="mainImg" priority placeholder="blur"/>
           </div>
           <div className={styles.contact}>
             <div className={styles.phone}>Phone: 010-8434-8174</div>

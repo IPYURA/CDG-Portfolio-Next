@@ -5,7 +5,7 @@ import IconGitHub from "@/public/icons/icon-github.svg";
 
 const LinkGithub = ({ address }: { address: string }) => {
   return (
-    <Link href={address} className={styles.iconLink}>
+    <Link href={address} className={styles.iconLink} target="_blank">
       <Svg width={32} height={32}>
         <IconGitHub />
       </Svg>
