@@ -4,6 +4,8 @@ import { roboto } from "./font";
 import Image from "next/image";
 import MainImg from "../public/images/img-me.jpg";
 import StackList from "@/components/Home/StackList";
+import Svg from "@/components/Svg";
+import IconArrow from "@/public/icons/icon-right-arrow.svg";
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
       <div className={styles.flexBox}>
         <div className={styles.pictureWrap}>
           <div className={styles.picture}>
-            <Image src={MainImg} alt="mainImg" priority placeholder="blur"/>
+            <Image src={MainImg} alt="mainImg" priority placeholder="blur" />
           </div>
           <div className={styles.contact}>
             <div className={styles.phone}>Phone: 010-8434-8174</div>
@@ -30,7 +32,12 @@ export default function Home() {
           </h4>
           <StackList />
         </section>
-        <Link href="/projects">프로젝트 보기</Link>
+        <Link href="/projects">
+          프로젝트 보기
+          <Svg width={13} height={10} color="#ffffff">
+            <IconArrow />
+          </Svg>
+        </Link>
       </div>
     </main>
   );
