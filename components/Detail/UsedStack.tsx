@@ -1,4 +1,4 @@
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/detail.module.scss";
 import { ReactNode } from "react";
 
 const UsedStack = ({ children }: { children: ReactNode }) => {

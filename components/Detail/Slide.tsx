@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/detail.module.scss";
 
 interface ISlideProps {
   image: StaticImageData;

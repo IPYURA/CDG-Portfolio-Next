@@ -1,4 +1,4 @@
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/detail.module.scss";
 import Link from "next/link";
 import Svg from "../Svg";
 import IconGitHub from "@/public/icons/icon-github.svg";

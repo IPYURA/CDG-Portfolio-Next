@@ -16,6 +16,11 @@ interface IData {
   title: string;
 }
 
+//썸네일은 다른 객체로 따로 만들어야할듯
+// export const thumbnailData = {
+
+// }
+
 export const mockData: IData = {
   thumbnail: mock1,
   sliderImg: [mock1, mock2, mock3, mock4, mock5],

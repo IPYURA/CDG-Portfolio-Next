@@ -1,15 +1,28 @@
-import styles from "@/styles/projects.module.scss";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+import styles from "@/styles/projects.module.scss";
 import mockImg from "../../public/images/mock/banksalad.jpg";
 
-const ProjectCard = () => {
+interface ICard {
+  title: string;
+  stacks: string;
+  description: string;
+
+  //Optional 제거
+  image?: StaticImageData;
+}
+
+const ProjectCard = ({ title, stacks, description }: ICard) => {
   return (
     <div className={styles.projectCard}>
-      <Image src={mockImg} alt="projectImg"/>
-      <div className={styles.desc}>
-        <h3>제목<div className={styles.stacks}>#React</div></h3>
-        <div>이곳에 설명이 들어갑니다</div>
-        
+      <Image src={mockImg} alt="projectImg" placeholder="blur" />
+
+      <div className={styles.textArea}>
+        <div className={styles.infoArea}>
+          <h3 className={styles.title}>{title}</h3>
+          <div className={styles.stacks}>{stacks}</div>
+        </div>
+        <div className={styles.desc}>{description}</div>
       </div>
     </div>
   );

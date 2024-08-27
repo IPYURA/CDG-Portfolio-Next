@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/detail.module.scss";
 import { StaticImageData } from "next/image";
-import Slide from "./Slide";
-import Pager from "./Pager";
+import Slide from "../Detail/Slide";
+import Pager from "../Detail/Pager";
 import Svg from "../Svg";
 import IconLeft from "@/public/icons/icon-left.svg";
 import IconRight from "@/public/icons/icon-right.svg";

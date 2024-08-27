@@ -8,26 +8,40 @@ const Projects = () => {
     <div className={styles.container}>
       <h3 className={`${styles.pageTitle} ${roboto.className}`}>PROJECTS</h3>
       <div className={styles.gridBox}>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
+        <Link href={"/projects/example"} className={styles.link}>
+          <ProjectCard
+            title="제목이 들어갑니다"
+            stacks="#react #styled-components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다.이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다.이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
         </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
+        <Link href={"/projects/example"} className={styles.link}>
+          <ProjectCard
+            title="제목이 들어갑니다"
+            stacks="#react #styled-components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
         </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
+        <Link href={"/projects/example"} className={styles.link}>
+          <ProjectCard
+            title="제목이 들어갑니다"
+            stacks="#react #styled-components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
         </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
+        <Link href={"/projects/example"} className={styles.link}>
+          <ProjectCard
+            title="제목이 들어갑니다"
+            stacks="#react #styled-components #styled-components #styled-components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다.이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다.이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다.이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
         </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
-        </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
-        </Link>
-        <Link href={"/projects/example"}>
-          <ProjectCard />
+        <Link href={"/projects/example"} className={styles.link}>
+          <ProjectCard
+            title="제목이 들어갑니다"
+            stacks="#react #styled-components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
         </Link>
       </div>
     </div>

@@ -1,10 +1,10 @@
-import styles from "@/styles/projects.module.scss";
-import Slider from "@/components/Projects/Slider";
-import Description from "@/components/Projects/Description";
-import UsedStack from "@/components/Projects/UsedStack";
-import StackBadge from "@/components/Projects/StackBadge";
-import LinkGithub from "@/components/Projects/LinkGithub";
-import LinkWeb from "@/components/Projects/LinkWeb";
+import styles from "@/styles/detail.module.scss";
+import Slider from "@/components/Detail/Slider";
+import Description from "@/components/Detail/Description";
+import UsedStack from "@/components/Detail/UsedStack";
+import StackBadge from "@/components/Detail/StackBadge";
+import LinkGithub from "@/components/Detail/LinkGithub";
+import LinkWeb from "@/components/Detail/LinkWeb";
 
 import { mockData } from "@/projectData";
 

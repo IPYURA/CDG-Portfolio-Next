@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/styles/projects.module.scss";
+import styles from "@/styles/detail.module.scss";
 import { StaticImageData } from "next/image";
 
 interface IPagerProps {
