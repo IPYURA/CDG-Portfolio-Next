@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { ImgNaming } from "@/projectData";
 import html from "@/public/icons/icon-html.png";
 import css from "@/public/icons/icon-css.png";
 import javascript from "@/public/icons/icon-js.png";
@@ -16,11 +16,7 @@ import github from "@/public/icons/icon-github.png";
 import figma from "@/public/icons/icon-figma.png";
 import sql from "@/public/icons/icon-mysql.png";
 
-interface IStacks {
-  [key: string]: StaticImageData;
-}
-
-export const stacks: IStacks = {
+export const stacks: ImgNaming = {
   html: html,
   css: css,
   javascript: javascript,

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import styles from "@/styles/projects.module.scss";
+
 import mockImg from "../../public/images/mock/banksalad.jpg";
 
 interface ICard {
@@ -9,13 +10,15 @@ interface ICard {
   description: string;
 
   //Optional 제거
-  image?: StaticImageData;
+  image: StaticImageData;
 }
 
-const ProjectCard = ({ title, stacks, description }: ICard) => {
+const ProjectCard = ({ image, title, stacks, description }: ICard) => {
   return (
     <div className={styles.projectCard}>
-      <Image src={mockImg} alt="projectImg" placeholder="blur" />
+      <div className={styles.imgWrap}>
+        <Image src={image} alt="projectImg" placeholder="blur" />
+      </div>
 
       <div className={styles.textArea}>
         <div className={styles.infoArea}>

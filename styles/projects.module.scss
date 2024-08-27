@@ -3,6 +3,7 @@
   margin: 0 auto;
   max-width: 1200px;
   min-width: 320px;
+  min-height: calc(100vh - 64px - 64px);
   .pageTitle {
     font-size: 24px;
     padding: 24px;
@@ -34,15 +35,21 @@
 //-------------ProjectCard
 .projectCard {
   cursor: pointer;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  > img {
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: block;
+  .imgWrap {
     width: 100%;
-    height: clamp(100px, 65%, 200px);
+    height: 200px;
+    background: var(--achromatic2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .textArea {
     padding: 8px;
@@ -85,6 +92,13 @@
       }
     }
   }
+  .projectCard {
+    .imgWrap {
+      > img {
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -100,13 +114,16 @@
       padding: 0 16px;
     }
   }
-
   .projectCard {
     flex-direction: row;
-    > img {
+    .imgWrap {
       min-width: 50%;
       max-width: 50%;
       height: 100%;
+
+      > img {
+        object-fit: cover;
+      }
     }
     .textArea {
       width: 50%;
@@ -120,15 +137,14 @@
       grid-template-columns: 1fr;
     }
   }
-
   .projectCard {
     display: flex;
     flex-direction: column;
     height: auto;
-    > img {
-      object-fit: contain;
+    .imgWrap {
+      min-width: 100%;
       max-width: 100%;
-      height: clamp(100px, 65%, 200px);
+      height: 100%;
     }
     .textArea {
       width: 100%;
