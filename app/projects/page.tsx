@@ -27,11 +27,29 @@ const Projects = () => {
           />
         </Link>
 
-        <Link href={"/projects/example"} className={styles.link}>
+        <Link href={"/projects/shoes"} className={styles.link}>
           <ProjectCard
-            image={tnData.protein}
-            title="단백질 기록하기"
+            image={tnData.shoes}
+            title="SHOES"
             stacks="#React #Redux #Styled-Components"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
+        </Link>
+
+        <Link href={"/projects/kanban"} className={styles.link}>
+          <ProjectCard
+            image={tnData.kanban}
+            title="칸반 보드"
+            stacks="#React #Recoil #Typescript"
+            description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
+          />
+        </Link>
+
+        <Link href={"/projects/wordle"} className={styles.link}>
+          <ProjectCard
+            image={tnData.wordle}
+            title="웹 게임 Wordle!"
+            stacks="#HTML #SCSS #Javascript"
             description="이것은 설명입니다 이것은 설명입니다 설명이 들어갑니다."
           />
         </Link>

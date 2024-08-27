@@ -4,6 +4,7 @@ import mock2 from "./public/images/mock/kanban.jpg";
 import mock3 from "./public/images/mock/nutrition.jpg";
 import mock4 from "./public/images/mock/shoes.jpg";
 import mock5 from "./public/images/mock/zzanggu.jpg";
+
 import insightTn from "./public/images/projects/insight-tn.png";
 import insight1 from "./public/images/projects/insight-1.jpg";
 import insight2 from "./public/images/projects/insight-2.jpg";
@@ -17,6 +18,7 @@ import protein3 from "./public/images/projects/protein-3.jpg";
 import protein4 from "./public/images/projects/protein-4.jpg";
 
 //짱구 넣어야됨
+//banksalad 넣어야됨
 
 import wordle1 from "./public/images/projects/wordle-1.png";
 import wordle2 from "./public/images/projects/wordle-2.png";
@@ -54,6 +56,8 @@ export const tnData: ImgNaming = {
   insight: insightTn,
   protein: proteinTn,
   wordle: wordle1,
+  kanban: kanban1,
+  shoes: shoes1,
 };
 
 export const insightData: IData = {
