@@ -1,10 +1,4 @@
 import { StaticImageData } from "next/image";
-import mock1 from "./public/images/mock/banksalad.jpg";
-import mock2 from "./public/images/mock/kanban.jpg";
-import mock3 from "./public/images/mock/nutrition.jpg";
-import mock4 from "./public/images/mock/shoes.jpg";
-import mock5 from "./public/images/mock/zzanggu.jpg";
-
 import insightTn from "./public/images/projects/insight-tn.png";
 import insight1 from "./public/images/projects/insight-1.jpg";
 import insight2 from "./public/images/projects/insight-2.jpg";
@@ -55,12 +49,6 @@ interface IData {
   sliderImg: StaticImageData[];
   title: string;
 }
-
-//목업 Data
-export const mockData: IData = {
-  sliderImg: [mock1, mock2, mock3, mock4, mock5],
-  title: "MOCKUP",
-};
 
 //썸네일 Data
 export const tnData: ImgNaming = {
