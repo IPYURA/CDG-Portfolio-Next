@@ -57,16 +57,19 @@
       margin-bottom: 16px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
       .title {
         transition: none;
         font-size: 18px;
         color: var(--text-color);
+        font-weight: 500;
       }
       .stacks {
+        letter-spacing: 0;
         line-height: 1.2;
         word-break: keep-all;
         font-size: 14px;
+        font-weight: 200;
         color: var(--text-color2);
       }
     }

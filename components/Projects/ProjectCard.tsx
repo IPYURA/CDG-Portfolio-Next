@@ -2,14 +2,10 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import styles from "@/styles/projects.module.scss";
 
-import mockImg from "../../public/images/mock/banksalad.jpg";
-
 interface ICard {
   title: string;
   stacks: string;
   description: string;
-
-  //Optional 제거
   image: StaticImageData;
 }
 
