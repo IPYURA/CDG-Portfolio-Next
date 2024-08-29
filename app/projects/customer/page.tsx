@@ -27,47 +27,25 @@ const Customer = () => {
       </div>
       <Description>
         <h2 className={styles.title}>[{customerData.title}]</h2>
-        <h3 className={styles.sectionTit}>작은 제목이들어갑니다.</h3>
+        <h3 className={styles.sectionTit}>
+          프로젝트 설명(현재 RDS 는 막아놓아 gitHub만 첨부합니다)
+        </h3>
         <div className={styles.desc}>
-          이곳에는 내용이 들어갑니다 Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Nam nesciunt dolorum corporis iure quod. Excepturi
-          voluptatem, alias consequatur libero quidem officia amet sequi
-          corporis. Laudantium eligendi cum libero sunt laboriosam? Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Officiis quos quasi
-          numquam tenetur sequi cum tempore quam amet impedit pariatur totam
-          nemo, ut veritatis, natus atque harum assumenda! Consequatur,
-          obcaecati? Ratione pariatur nisi sapiente voluptatum omnis. Nisi neque
-          ab magnam? Illum nostrum doloremque culpa soluta, vitae corporis. Cum,
-          facilis aspernatur rem distinctio repudiandae obcaecati quae delectus
-          beatae dignissimos, praesentium necessitatibus. Accusantium nam ea
-          animi blanditiis itaque eveniet iure et! Qui, laudantium molestias
-          assumenda nemo, libero exercitationem repudiandae architecto fugit
-          maxime suscipit, aspernatur incidunt amet quae ea rerum recusandae
-          quis commodi. Asperiores deleniti recusandae accusamus autem molestiae
-          mollitia nisi reprehenderit laborum eveniet. Nemo, quam nostrum quos
-          saepe quas voluptatum ducimus. Nisi non voluptatem accusantium
-          consequuntur quo tempore corporis doloremque quaerat minus! Neque
-          consequuntur laboriosam culpa impedit qui veniam, accusantium
-          similique exercitationem explicabo tempora autem ipsa. Iure animi
-          provident tempora! Neque, dignissimos. Eum itaque reiciendis quis
-          sapiente necessitatibus architecto quasi aliquid placeat. Praesentium
-          hic quia voluptate nemo delectus esse libero consequuntur odit
-          blanditiis pariatur beatae optio, aspernatur laudantium nulla iure
-          voluptas? Numquam, vitae id necessitatibus porro ex cupiditate
-          deleniti dolore minima fugit. At debitis ut reprehenderit et in neque,
-          sequi, natus esse delectus unde eos autem exercitationem consequuntur
-          fuga architecto quidem consequatur numquam cumque. Fugiat hic
-          excepturi numquam totam adipisci doloribus enim. Atque sequi provident
-          beatae cum! Eaque, a. Voluptate eveniet atque eius error dolores sed,
-          quis tempora sequi voluptas porro, praesentium velit unde saepe
-          commodi fuga blanditiis libero, possimus similique repellendus?
-          Voluptatem architecto odit, maxime quasi totam fugit porro cupiditate
-          laborum. Magnam earum est quae voluptas eveniet! Corrupti, ipsam omnis
-          nisi vel in repellat aperiam, odio, quos dicta voluptatibus
-          perferendis est! Labore, eum. Explicabo, deleniti quidem. Nulla iure
-          expedita animi voluptate quasi perferendis pariatur quis laboriosam
-          doloremque unde aspernatur alias veniam accusantium mollitia, sed quos
-          qui harum. Nam esse voluptatum facilis?
+          Express.js 프레임워크를 사용하여 HTTP 서버를 설정하고, AWS의 RDS를
+          사용하여 데이터베이스(MySQL)를 연결하여 고객 추가 및 삭제 기능을
+          개발했습니다.
+          <br />
+          삭제 시에는 고객 데이터를 실제로 삭제하지 않고 isDeleted 플래그를 1로
+          업데이트하여 isDeleted = 0 인 데이터를 가져오는 WHERE 조건문에 의해
+          화면에만 표시되지 않도록 했습니다.
+          <br />
+          <br />
+          multer라는 파일 업로드를 위한 미들웨어를 따로 설치하여 이미지 파일을
+          업로드할 수 있도록 했습니다.
+          <br />
+          <br />
+          Form을 통해 작성된 항목들과 이미지 경로값을 INSERT 쿼리문을 실행하여
+          클라이언트에 SQL 실행 결과를 반환합니다.
         </div>
       </Description>
     </div>
