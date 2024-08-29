@@ -56,7 +56,7 @@ const Wordle = () => {
           innerHTML으로 새로운 노드를 추가했을 때, 기존 input 값이 보존되지 않고
           초기화되는 문제가 있었습니다.
           <br />
-          insertAdjacentHTML('beforeend', )를 사용하여 해결했습니다.
+          insertAdjacentHTML(&apos;beforeend&apos;, )를 사용하여 해결했습니다.
         </div>
       </Description>
     </div>
