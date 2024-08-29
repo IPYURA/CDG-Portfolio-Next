@@ -23,7 +23,7 @@ const Projects = () => {
             image={tnData.insight}
             title="스타트업 프로젝트"
             stacks="#Next.js #Typescript"
-            description="풀스택 개발자 1명과 같이 외주를 받아 개발한 스타트업 기업의 홈페이지입니다."
+            description="풀스택 개발자 1명과 함께 외주를 받아 개발한 스타트업 기업의 홈페이지입니다."
           />
         </Link>
 
@@ -63,15 +63,6 @@ const Projects = () => {
           />
         </Link>
 
-        <Link href={"/projects/wordle"} className={styles.link}>
-          <ProjectCard
-            image={tnData.wordle}
-            title="웹 게임 Wordle!"
-            stacks="#HTML #SCSS #Javascript"
-            description="5번의 기회 내에서 랜덤으로 정해지는 정답 단어를 맞추는 Wordle 게임입니다."
-          />
-        </Link>
-
         <Link href={"/projects/kanban"} className={styles.link}>
           <ProjectCard
             image={tnData.kanban}
@@ -81,11 +72,20 @@ const Projects = () => {
           />
         </Link>
 
+        <Link href={"/projects/wordle"} className={styles.link}>
+          <ProjectCard
+            image={tnData.wordle}
+            title="웹 게임 Wordle!"
+            stacks="#HTML #SCSS #Javascript"
+            description="5번의 기회 내에서 랜덤으로 정해지는 정답 단어를 맞추는 Wordle 게임입니다."
+          />
+        </Link>
+
         <Link href={"/projects/zzanggu"} className={styles.link}>
           <ProjectCard
             image={tnData.zzanggu}
             title="내가 짱구 속 인물이라면?"
-            stacks="#React #Typescript #Styled-Components"
+            stacks="#React #Typescript #Styled-Components #Bootstrap"
             description="12문항의 질문을 통해 결과지를 보여주는 성격 테스트입니다."
           />
         </Link>

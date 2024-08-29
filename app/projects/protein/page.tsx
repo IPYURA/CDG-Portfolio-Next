@@ -13,8 +13,9 @@ const Protein = () => {
     <div className={styles.detailWrap}>
       <Slider images={proteinData.sliderImg} />
       <UsedStack>
-        <StackBadge name="Next.js" />
-        <StackBadge name="Typescript" />
+        <StackBadge name="React" />
+        <StackBadge name="Redux" />
+        <StackBadge name="Styled-Components" />
       </UsedStack>
       <div className={styles.linkBox}>
         <span>방문하기: &nbsp;</span>
@@ -23,47 +24,29 @@ const Protein = () => {
       </div>
       <Description>
         <h2 className={styles.title}>[{proteinData.title}]</h2>
-        <h3 className={styles.sectionTit}>작은 제목이들어갑니다.</h3>
+        <h3 className={styles.sectionTit}>주요 기능</h3>
         <div className={styles.desc}>
-          이곳에는 내용이 들어갑니다 Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Nam nesciunt dolorum corporis iure quod. Excepturi
-          voluptatem, alias consequatur libero quidem officia amet sequi
-          corporis. Laudantium eligendi cum libero sunt laboriosam? Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Officiis quos quasi
-          numquam tenetur sequi cum tempore quam amet impedit pariatur totam
-          nemo, ut veritatis, natus atque harum assumenda! Consequatur,
-          obcaecati? Ratione pariatur nisi sapiente voluptatum omnis. Nisi neque
-          ab magnam? Illum nostrum doloremque culpa soluta, vitae corporis. Cum,
-          facilis aspernatur rem distinctio repudiandae obcaecati quae delectus
-          beatae dignissimos, praesentium necessitatibus. Accusantium nam ea
-          animi blanditiis itaque eveniet iure et! Qui, laudantium molestias
-          assumenda nemo, libero exercitationem repudiandae architecto fugit
-          maxime suscipit, aspernatur incidunt amet quae ea rerum recusandae
-          quis commodi. Asperiores deleniti recusandae accusamus autem molestiae
-          mollitia nisi reprehenderit laborum eveniet. Nemo, quam nostrum quos
-          saepe quas voluptatum ducimus. Nisi non voluptatem accusantium
-          consequuntur quo tempore corporis doloremque quaerat minus! Neque
-          consequuntur laboriosam culpa impedit qui veniam, accusantium
-          similique exercitationem explicabo tempora autem ipsa. Iure animi
-          provident tempora! Neque, dignissimos. Eum itaque reiciendis quis
-          sapiente necessitatibus architecto quasi aliquid placeat. Praesentium
-          hic quia voluptate nemo delectus esse libero consequuntur odit
-          blanditiis pariatur beatae optio, aspernatur laudantium nulla iure
-          voluptas? Numquam, vitae id necessitatibus porro ex cupiditate
-          deleniti dolore minima fugit. At debitis ut reprehenderit et in neque,
-          sequi, natus esse delectus unde eos autem exercitationem consequuntur
-          fuga architecto quidem consequatur numquam cumque. Fugiat hic
-          excepturi numquam totam adipisci doloribus enim. Atque sequi provident
-          beatae cum! Eaque, a. Voluptate eveniet atque eius error dolores sed,
-          quis tempora sequi voluptas porro, praesentium velit unde saepe
-          commodi fuga blanditiis libero, possimus similique repellendus?
-          Voluptatem architecto odit, maxime quasi totam fugit porro cupiditate
-          laborum. Magnam earum est quae voluptas eveniet! Corrupti, ipsam omnis
-          nisi vel in repellat aperiam, odio, quos dicta voluptatibus
-          perferendis est! Labore, eum. Explicabo, deleniti quidem. Nulla iure
-          expedita animi voluptate quasi perferendis pariatur quis laboriosam
-          doloremque unde aspernatur alias veniam accusantium mollitia, sed quos
-          qui harum. Nam esse voluptatum facilis?
+          <ul>
+            <li>자주 먹는 음식 등록을 통해 항목 즉시 추가</li>
+            <li>단백질 섭취 목표 설정 후 달성률 시각적으로 표시</li>
+          </ul>
+        </div>
+        <h3 className={styles.sectionTit}>전역 상태관리 Redux</h3>
+        <div className={styles.desc}>
+          Redux를 연습해보며 만든 프로젝트입니다. Action과 Reducer, Store 간의
+          객체 형태의 단방향 데이터 흐름을 만들어 내는 Redux의 원리에 대해
+          학습했습니다.
+          <br />
+          원본 배열을 변화시키지 않도록 하며 Spread Opertor와 Destructuring
+          Assignment의 개념을 다시 잡았습니다.
+        </div>
+        <h3 className={styles.sectionTit}>디자인</h3>
+        <div className={styles.desc}>
+          모든 프로젝트를 스스로 디자인했지만, 이 프로젝트는 특히 디자인에 많은
+          시간을 투자했습니다. <br />
+          유사한 컬러셋과 텍스트 색상 등을 고민하며 선정하였고,
+          Styled-Components 의 ThemeProvider를 통해 전역적으로 사용될 스타일을
+          설계했습니다.
         </div>
       </Description>
     </div>
