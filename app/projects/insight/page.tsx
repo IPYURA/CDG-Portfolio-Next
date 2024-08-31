@@ -26,7 +26,7 @@ const Insight = () => {
         <h3 className={styles.sectionTit}>수행한 업무</h3>
         <div className={styles.desc}>
           상단부분 Contact, Donate 모달 및 Form 유효성 검증과 유효성에 따른 UI
-          개발.
+          개발
           <br />
           페이지 퍼블리싱 및 반응형 개발
           <br />
