@@ -23,6 +23,10 @@ const Insight = () => {
       </div>
       <Description>
         <h2 className={styles.title}>[{insightData.title}]</h2>
+        <div className={styles.desc}>
+          *전체 코드를 공개할 수 없어 이미지, 텍스트 등이 교체된 개발 중간 단계
+          코드를 첨부합니다.
+        </div>
         <h3 className={styles.sectionTit}>수행한 업무</h3>
         <div className={styles.desc}>
           상단부분 Contact, Donate 모달 및 Form 유효성 검증과 유효성에 따른 UI

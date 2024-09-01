@@ -23,7 +23,7 @@ const Projects = () => {
             image={tnData.insight}
             title="스타트업 프로젝트"
             stacks="#Next.js #Typescript"
-            description="풀스택 개발자 1명과 함께 외주를 받아 개발한 스타트업 기업의 홈페이지입니다."
+            description="풀스택 개발자 1명, 디자이너 1명과 함께 외주를 받아 개발한 스타트업 기업의 홈페이지입니다."
           />
         </Link>
 
