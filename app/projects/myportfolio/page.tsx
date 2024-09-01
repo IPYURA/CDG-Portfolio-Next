@@ -23,6 +23,9 @@ const MyPortfolio = () => {
       </div>
       <Description>
         <h2 className={styles.title}>[{portfolioData.title}]</h2>
+        <div className={styles.desc}>
+          원래 React로 개발했었다가 Next.js로 마이그레이션 하였습니다.
+        </div>
         <h3 className={styles.sectionTit}>맞춤형 다크모드</h3>
         <div className={styles.desc}>
           페이지에 접속하면 가장 먼저 로컬스토리지의 저장된 다크/라이트 값이
