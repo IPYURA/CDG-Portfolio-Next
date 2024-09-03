@@ -134,7 +134,7 @@
     padding: 16px;
     top: 0;
     left: -360px;
-    background: var(--achromatic1);
+    background: var(--lighten-color1);
     width: clamp(180px, 40%, 360px);
     height: calc(100vh - 56px);
     transition: all 0.4s ease-out;
@@ -144,6 +144,7 @@
     > a {
       font-size: 18px;
       width: 100%;
+      color: #fff;
       &.on {
         color: var(--secondary-color);
       }
@@ -163,7 +164,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .footer {
     font-size: 12px;
   }
